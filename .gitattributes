@@ -1,0 +1,7 @@
+*.yaml              diff=sopsdiffer
+*.yml               diff=sopsdiffer
+*.json              diff=sopsdiffer
+*.env               diff=sopsdiffer
+*.ini               diff=sopsdiffer
+secretdir/**        diff=sopsdiffer
+.gitattributes      !diff
