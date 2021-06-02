@@ -7,6 +7,8 @@ creation_rules:
     key_groups:
       - pgp:
           - BCE6E1D2A509156191BA016FDF0B5C535207EF1E
+        age:
+          - age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
         # kms:
         #   - arn:
         #     role:
@@ -16,12 +18,16 @@ creation_rules:
 
       - pgp:
           - BCE6E1D2A509156191BA016FDF0B5C535207EF1E
+        age:
+          - age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
         # kms:
         #   - arn:
         #   - arn:
 
       - pgp:
           - BCE6E1D2A509156191BA016FDF0B5C535207EF1E
+        age:
+          - age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
         # kms:
         #   - arn:
         #   - arn:
@@ -37,12 +43,16 @@ creation_rules:
   - path_regex: \.json$
     pgp: >-
       BCE6E1D2A509156191BA016FDF0B5C535207EF1E
+    age: >-
+      age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
     # kms:
     # hc_vault_uris:
 
   - path_regex: \.env$
     pgp: >-
       BCE6E1D2A509156191BA016FDF0B5C535207EF1E
+    age: >-
+      age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
     # gcp_kms:
 
   # Finally, if the rules above have not matched, this one is a
@@ -50,4 +60,6 @@ creation_rules:
   # The absence of a path_regex means it will match everything
   - pgp: >-
       BCE6E1D2A509156191BA016FDF0B5C535207EF1E
-  #   kms:
+    age: >-
+      age16dzqngyqpnws7k2e4wt6ajc368qxcz6h6dhktvvlhanu38xt3sqqrjsmet
+    # kms:
